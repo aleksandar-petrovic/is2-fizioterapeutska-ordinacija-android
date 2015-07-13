@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.aleksandar.fizioterapeutskaordinacija.RegisterPacijent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:weightSum="1"
+        android:id="@+id/registerLayout"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUser"
+            android:layout_gravity="center_horizontal"
+            android:hint="Korisnicko ime"
+            android:width="200dp"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPass1"
+            android:hint="Sifra"
+            android:width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:password="true" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPass2"
+            android:hint="Ponovo unesite sifru"
+            android:width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:password="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Izaberite fizijatra"
+            android:id="@+id/textView"
+            android:paddingTop="10dp" />
+
+        <Spinner
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/spinnerFizijatar"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Izaberite fizioterapeuta"
+            android:id="@+id/textView2"
+            android:paddingTop="10dp" />
+
+        <Spinner
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/spinnerFizioterapeut"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registruj se"
+            android:id="@+id/registerButton"
+            android:layout_marginTop="10dp"
+            android:background="@color/buttonBlue"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:onClick="registerButton" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Registracija pacijenta"
+        android:id="@+id/textView3"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
